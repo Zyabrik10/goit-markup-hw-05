@@ -16,6 +16,14 @@
 </head>
 
 <body>
+
+    <!-- modal window -->
+    <div class="modal-wrapper" data-modal>
+        <div class="modal-window">
+            <button class="close-button" data-modal-close>&times;</button>
+        </div>
+    </div>
+
     <!-- <HEADER> -->
     <header class="header">
         <div class="container header-content">
@@ -25,7 +33,7 @@
             <nav class="navigation">
                 <ul class="navigation-list list">
                     <li class="navigation-item">
-                        <a class="navigation-link link" href="./index.html">Studio</a>
+                        <a class="navigation-link link current" href="./index.html">Studio</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
@@ -57,7 +65,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
-                <button class="hero-button button" type="button">Order Service</button>
+                <button class="hero-button button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <!-- <HERO> -->
@@ -999,6 +1007,8 @@
         </div>
     </footer>
     <!-- </FOOTER> -->
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
