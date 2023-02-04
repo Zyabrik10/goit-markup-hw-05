@@ -171,6 +171,17 @@ body {
   font-size: 20px;
 
   border-radius: 100%;
+
+  transition-property: background-color, border-color;
+  transition-duration: var(--general-duration);
+  transition-timing-function: var(--general-timimng-function);
+}
+
+.close-button:hover,
+.close-button:focus {
+  background-color: var(--ocean);
+  border-color: var(--ocean);
+  color: #fff;
 }
 
 .modal-wrapper.is-hidden {
@@ -654,15 +665,19 @@ body {
   flex-basis: auto;
 }
 
-.footer-media-icon-background {
-  transition-property: fill;
+.footer-media-link {
+  transition-property: background-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timimng-function);
+
+  display: block;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
 }
 
-.footer-media-link:hover .footer-media-icon-background,
-.footer-media-link:focus .footer-media-icon-background {
-  fill: var(--green);
+.footer-media-link:hover {
+  background-color: var(--green);
 }
 
 .footer-madia-title {
