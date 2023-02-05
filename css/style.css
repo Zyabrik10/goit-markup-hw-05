@@ -466,6 +466,28 @@ body {
 .member-img {
   display: block;
 }
+
+.member-soc-media-link {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--primary-brand);
+  border-radius: 100%;
+
+  transition-property: background-color;
+  transition-duration: var(--general-duration);
+  transition-timing-function: var(--general-timimng-function);
+}
+
+.member-soc-media-link:hover,
+.member-soc-media-link:focus {
+  background-color: var(--ocean);
+}
 /* </OUR TEAM SECTION> */
 
 /* <CUSTOMERS> */
@@ -473,25 +495,28 @@ body {
   --items: 6;
 }
 
-.customer-icon-background,
-.client-icon-border {
-  transition-property: fill;
+.customers-client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--light-slate);
+  border-radius: 10px;
+
+  padding: 16px 0;
+
+  color: var(--light-slate);
+  fill: currentColor;
+
+  transition-property: color, border-color;
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timimng-function);
 }
 
-.client-icon-border {
-  transition-property: stroke;
-}
-
-.customers-client-link:hover .customer-icon-background,
-.customers-client-link:focus .customer-icon-background {
-  fill: var(--ocean);
-}
-
-.customers-client-link:hover .client-icon-border,
-.customers-client-link:focus .client-icon-border {
-  stroke: var(--ocean);
+.customers-client-link:hover,
+.customers-client-link:focus {
+  color: var(--ocean);
+  border-color: var(--ocean);
 }
 
 .customers-title {
@@ -670,10 +695,15 @@ body {
   transition-duration: var(--general-duration);
   transition-timing-function: var(--general-timimng-function);
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border-radius: 100%;
   width: 40px;
   height: 40px;
+
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-media-link:hover {
